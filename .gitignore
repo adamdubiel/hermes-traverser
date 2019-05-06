@@ -64,7 +64,7 @@ target/
 
 # Virtualenv
 
-/bin/
-/include/
-/local/
-/lib/
+/venv
+/migration-data
+
+/.vscode
