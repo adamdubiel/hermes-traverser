@@ -107,7 +107,6 @@ def load_csv_configuration(source) -> MigrationData:
 
 def traverse(zk, prefix, migration_data, dryrun):
     counter = 0
-    missingSubDataCounter = 0
     for group in zk.get_children("{}/groups".format(prefix)):
         for topic in zk.get_children("{}/groups/{}/topics".format(prefix, group)):
             topicWithGroup = "{}.{}".format(group, topic)
